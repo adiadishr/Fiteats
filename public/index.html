@@ -24,8 +24,8 @@
         </div>
         <div class="w-1/2 h-[inherit] flex items-center justify-end">
             <div class="navlinks hidden lg:flex flex-row h-max mr-[10%] gap-[30px] items-center">
-                <a class="navlink">Home</a>
-                <a class="navlink">About Us</a>
+                <a href="index.html" class="navlink">Home</a>
+                <a href="#about" class="navlink">About Us</a>
                 <a class="navlink">Team</a>
                 <a class="navlink">Explore</a>
                 <a href="login.html">
@@ -56,13 +56,18 @@
                     seasoned chef or just starting your culinary journey, we have a wide range of delicious and
                     nutritious recipes to suit your taste buds.
                 </p>
-                <div class="buttons flex flex-row gap-[20px]">
-                    <button class="primary-btn btn">
-                        Get Started
-                    </button>
-                    <button class="secondary-btn btn ">
-                        Sign Up <i class="fa-solid fa-arrow-right fa-rotate-by " style="--fa-rotate-angle: -45deg;"></i>
-                    </button>
+                <div class="buttons flex flex-row items-center gap-5">
+                    <a href="home.html">
+                        <button class="primary-btn btn border-2 border-primary">
+                            Get Started
+                        </button>
+                    </a>
+                    <a href="register.html">
+                        <button class="secondary-btn btn ">
+                            Sign Up <i class="fa-solid fa-arrow-right fa-rotate-by "
+                                style="--fa-rotate-angle: -45deg;"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -73,7 +78,7 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <div class="w-full h-max mb-20 flex flex-col items-center">
+    <div class="w-full h-max mb-20 flex flex-col items-center" id="about">
         <div class="h-max flex flex-col gap-[80px] mx-[5%]">
             <div class="flex flex-col gap-[30px]">
                 <h1 class="heading lg:text-center w-11/12 md:w-10/12 lg:w-7/12 mx-auto">So, what is Fit.eats?</h1>
@@ -154,7 +159,7 @@
                 </div>
                 <div class="flex w-1/2 justify-end items-end">
                     <div class="flex items-center flex-row gap-5 h-max">
-                        <p class="font-semibold text-[20px]/[150%] text-textcolor">Go to top</p>
+                        <p class="hidden md:block font-semibold text-[20px]/[150%] text-textcolor">Go to top</p>
                         <a href="#navbar" id="topbutton">
                             <button class="animate-bounce">
                                 <div class="flex rounded-full h-16 w-16 bg-[#658936] items-center justify-center"><i

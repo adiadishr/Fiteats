@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-background font-universal">
+
+    <!-- Top Start -->
+    <div class="flex w-full h-[130px] justify-center items-center">
+        <a href="index.html">
+            <div class="flex flex-row gap-[30px]">
+                <div class="flex items-center justify-center">
+                    <img src="./assets/logo.svg" class="w-auto h-[120px]">
+                </div>
+                <div class="flex justify-center items-center">
+                    <h1 class="logo mt-10">Fit.eats</h1>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!-- Top End -->
+
+    <!-- Login Start -->
+    <div class="flex w-full justify-center items-center py-[40px]">
+        <div class="flex w-9/12 border-2 border-black rounded-[40px]">
+            <div
+                class="flex flex-col w-1/2 bg-white rounded-tl-[40px] rounded-bl-[40px] justify-center items-center gap-10">
+                <div class="dividers flex flex-col gap-[7px] w-9/12 mx-auto">
+                    <div class="h-[4px] rounded-lg bg-[#6A994E]"></div>
+                    <div class="h-[5px] rounded-lg bg-[#6A994E]"></div>
+                    <div class="h-[6px] rounded-lg bg-[#6A994E]"></div>
+                    <div class="h-[7px] rounded-lg bg-[#6A994E]"></div>
+                </div>
+                <h1 class="text-[48px]/[120%] font-bold text-primary text-center">Eat Healthy, <br> Be Healthy!</h1>
+            </div>
+            <div
+                class="flex flex-col items-center px-[5%] w-1/2 rightside rounded-tr-[40px] rounded-br-[40px] gap-[24px] py-[25px]">
+                <h1 class="text-[48px]/[120%] font-bold text-white">Register</h1>
+                <form id="resgistrationForm" class="flex flex-col w-full gap-[24px]">
+                    <div class="flex flex-row gap-5">
+                        <div class="flex flex-col gap-2">
+                            <p class="logintext">First Name:</p>
+                            <input placeholder="First Name" class="p-2 rounded-md w-full" type="text" name="firstName">
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="logintext">Last Name:</p>
+                            <input placeholder="Last Name" class="p-2 rounded-md w-full" type="text" name="lastName">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="logintext">Username:</p>
+                        <input placeholder="Enter your username" class="p-2 rounded-md" type="text" name="username">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="logintext">Email:</p>
+                        <input placeholder="Enter your email" class="p-2 rounded-md" type="email" name="email">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <p class="logintext">Password:</p>
+                        <input placeholder="Enter your password" class="p-2 rounded-md" type="password" name="password">
+                        <input placeholder="Repeat your password" class="p-2 rounded-md" type="password"
+                            name="repeatPassword">
+                    </div>
+                    <button id="registerButton" type="submit" class="loginbtn btn text-center">Register</button>
+                </form>
+                <div class="flex flex-row w-full justify-between">
+                    <div class="flex items-center">
+                        <p class="logintext">Already have an account?</p>
+                    </div>
+                    <a href="login.html" class="logintext"><button class="auxiliary-btn btn">Login</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login End -->
+
+    <!-- Script -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

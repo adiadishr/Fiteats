@@ -54,6 +54,38 @@ html {
 
 /* Login Page End */
 
+/* Home Page Start */
+
+.category-tab {
+    @apply flex flex-row w-full gap-[10px] px-[20px] py-[15px] items-center rounded-lg cursor-pointer hover:bg-opacity-90 hover:bg-primary hover:text-white text-textcolor
+}
+
+.category-text {
+    @apply text-[18px]/[120%] font-normal
+}
+
+.category-active {
+    @apply bg-primary text-white
+}
+
+.card {
+    @apply flex flex-col w-full 1080px:w-[32.5%] md:w-[48.5%] h-max rounded-xl border-r-2 border-b-2 border-black bg-white shadow-card hover:-translate-y-1 duration-300 transition-all cursor-pointer hover:outline-dashed outline-primary outline-[5px]
+}
+
+.recipe-title {
+    @apply font-semibold text-[18px]/[120%] text-textcolor
+}
+
+.recipe-subtitle {
+    @apply font-light text-[16px]/[120%] text-textcolor
+}
+
+.rating {
+    @apply font-semibold text-[18px]/[120%]
+}
+
+/* Home Page End */
+
 /* Buttons Start */
 
 .btn {
@@ -61,15 +93,15 @@ html {
 }
 
 .primary-btn {
-    @apply bg-primary text-white rounded-md px-[20px] py-[8px]
+    @apply bg-primary text-white rounded-md px-[20px] py-[12px]
 }
 
 .secondary-btn {
-    @apply rounded-md px-[20px] py-[8px] border-solid border-2 border-primary text-textcolor
+    @apply rounded-md px-[20px] py-[12px] border-solid border-2 border-primary text-textcolor
 }
 
 .auxiliary-btn {
-    @apply rounded-md px-[20px] py-[8px] bg-transparent border-solid border-2 border-white text-white
+    @apply rounded-md px-[20px] py-[12px] bg-transparent border-solid border-2 border-white text-white
 }
 
 /* Buttons End */
