@@ -4,20 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
 
+/* Globals Start */
 
 .logo {
     @apply text-textcolor text-[48px]/[120%] font-bold
-}
-
-.navlink {
-    @apply text-white text-[18px]/[150%] font-normal
-}
-
-.rightside {
-    background:
-        url('/public/assets/grid.png') center/cover,
-        #4D7C0F;
 }
 
 .heading {
@@ -25,5 +19,57 @@
 }
 
 .paragraph {
-    @apply font-normal text-[18px]/[150%]
+    @apply font-normal text-[18px]/[150%] text-textcolor
 }
+
+.footertext {
+    @apply text-white text-[18px]/[150%] font-normal
+}
+
+.navlink {
+    @apply text-white text-[18px]/[150%] font-normal cursor-pointer hover:scale-110 transition-all duration-[350ms]
+}
+
+/* Globals End */
+
+/* Landing Page Start */
+
+.rightside {
+    background:
+        url('/public/assets/grid.png') center/cover,
+        #4D7C0F;
+}
+
+/* Landing Page End */
+
+/* Login Page Start */
+
+.logintext {
+    @apply text-white text-[18px]/[150%] font-normal
+}
+
+.loginbtn {
+    @apply py-[12px] px-[24px] bg-light rounded-md border-2 border-black
+}
+
+/* Login Page End */
+
+/* Buttons Start */
+
+.btn {
+    @apply hover:-translate-y-[5px] transition-all duration-300
+}
+
+.primary-btn {
+    @apply bg-primary text-white rounded-md px-[20px] py-[8px]
+}
+
+.secondary-btn {
+    @apply rounded-md px-[20px] py-[8px] border-solid border-2 border-primary text-textcolor
+}
+
+.auxiliary-btn {
+    @apply rounded-md px-[20px] py-[8px] bg-transparent border-solid border-2 border-white text-white
+}
+
+/* Buttons End */

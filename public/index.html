@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fit.Eats</title>
+    <title>Fit.eats</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
@@ -13,30 +13,30 @@
 <body class="bg-background font-universal">
 
     <!-- Navbar Start -->
-    <div class="navbar w-full h-[140px] bg-transparent flex flex-row absolute top-0 z-50">
-        <div class="w-1/2 h-[inherit] flex flex-row gap-[30px] justify-start">
+    <div id="navbar" class="w-full h-[140px] bg-transparent flex flex-row absolute top-0 z-50">
+        <div class="w-full lg:w-1/2 h-[inherit] flex flex-row gap-[30px] justify-start">
             <div class="ml-[10%] flex items-center justify-center">
                 <img src="./assets/logo.svg" class="w-auto h-[120px]">
             </div>
             <div class="flex justify-center items-center">
-                <h1 class="logo mt-10">Fit.Eats</h1>
+                <h1 class="logo mt-10">Fit.eats</h1>
             </div>
         </div>
         <div class="w-1/2 h-[inherit] flex items-center justify-end">
-
             <div class="navlinks hidden lg:flex flex-row h-max mr-[10%] gap-[30px] items-center">
                 <a class="navlink">Home</a>
                 <a class="navlink">About Us</a>
                 <a class="navlink">Team</a>
                 <a class="navlink">Explore</a>
-                <button class="rounded-md px-[20px] py-[8px] border-solid border-2 border-white text-white">
-                    Log In
-                </button>
+                <a href="login.html">
+                    <button class="auxiliary-btn hover:scale-110 transition-all duration-[350ms]">
+                        Log In
+                    </button>
+                </a>
             </div>
         </div>
     </div>
     <!-- Navbar End -->
-
 
     <!-- Hero Section Start -->
     <div class="w-full h-max flex lg:flex-row flex-col mb-40">
@@ -48,8 +48,8 @@
                     <div class="h-[6px] w-10/12 rounded-lg bg-[#6A994E]"></div>
                     <div class="h-[7px] w-10/12 rounded-lg bg-[#6A994E]"></div>
                 </div>
-                <h1 class="heading">Discover Delicious and Nutritious Recipes on Fiteats</h1>
-                <p class="paragraph text-textcolor">Welcome to Fiteats, the ultimate platform for sharing and
+                <h1 class="heading">Discover Delicious and Nutritious Recipes on Fit.eats</h1>
+                <p class="paragraph">Welcome to the ultimate platform for sharing and
                     exploring
                     healthy
                     recipes. Whether you're a
@@ -57,11 +57,11 @@
                     nutritious recipes to suit your taste buds.
                 </p>
                 <div class="buttons flex flex-row gap-[20px]">
-                    <button class="bg-primary text-white rounded-md px-[20px] py-[8px]">
+                    <button class="primary-btn btn">
                         Get Started
                     </button>
-                    <button class="rounded-md px-[20px] py-[8px] border-solid border-2 border-primary text-textcolor">
-                        Sign Up <i class="fa-solid fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: -45deg;"></i>
+                    <button class="secondary-btn btn ">
+                        Sign Up <i class="fa-solid fa-arrow-right fa-rotate-by " style="--fa-rotate-angle: -45deg;"></i>
                     </button>
                 </div>
             </div>
@@ -73,21 +73,125 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <div class="w-full h-[2000px] bg-gray-300 flex flex-col items-center">
-        <div class="h-max flex flex-col gap-[30px] bg-background mx-[10%]">
-            <h1 class="heading text-center">So, What is Fiteats?</h1>
-            <div class="w-11/12 md:w-10/12 lg:w-7/12 mx-auto">
-                <p class="paragraph text-center">Fiteats is a health food recipe sharing platform. It serves as a
-                    comprehensive resource
-                    for individuals seeking nutritious meal ideas, cooking inspiration, and community support on their
-                    wellness journey.</p>
+    <div class="w-full h-max mb-20 flex flex-col items-center">
+        <div class="h-max flex flex-col gap-[80px] mx-[5%]">
+            <div class="flex flex-col gap-[30px]">
+                <h1 class="heading lg:text-center w-11/12 md:w-10/12 lg:w-7/12 mx-auto">So, what is Fit.eats?</h1>
+                <div class="w-11/12 md:w-10/12 lg:w-7/12 mx-auto">
+                    <p class="paragraph lg:text-center">Fiteats is a health food recipe sharing platform. It serves as a
+                        comprehensive resource
+                        for individuals seeking nutritious meal ideas, cooking inspiration, and community support on
+                        their
+                        wellness journey.</p>
+                </div>
+            </div>
+            <div class="flex flex-col ">
+                <div class="flex lg:flex-row flex-col">
+                    <div class="lg:w-[49.5%]">
+                        <img src="./assets/2.png">
+                    </div>
+                    <div class="w-[1%] bg-light"></div>
+                    <div class="lg:w-[49.5%] flex flex-col gap-[40px] justify-center lg:p-[60px] p-[20px]">
+                        <div class="border-b-2 border-light">
+                            <h1 class="heading">Our Mission</h1>
+                        </div>
+                        <p class="paragraph">We want to make eating healthy enjoyable, convenient, and sustainable for
+                            everyone.</p>
+
+                    </div>
+                </div>
+                <div class="flex lg:flex-row flex-col">
+                    <div
+                        class="lg:w-[49.5%] flex flex-col gap-[40px] justify-center lg:p-[60px] p-[20px] order-3 lg:order-1">
+                        <div class="border-b-2 border-light">
+                            <h1 class="heading lg:text-right">What we do</h1>
+                        </div>
+                        <p class="paragraph lg:text-right">We provide a platform where the health oriented community and
+                            foster and share a diverse range of nutritious recipes
+                        </p>
+                    </div>
+                    <div class="w-[1%] bg-light order-2"></div>
+                    <div class="lg:w-[49.5%] order-1 lg:order-3">
+                        <img src="./assets/4.png">
+                    </div>
+                </div>
+                <div class="flex lg:flex-row flex-col">
+                    <div class="lg:w-[49.5%]">
+                        <img src="./assets/6.png">
+                    </div>
+                    <div class="w-[1%] bg-light"></div>
+                    <div class="lg:w-[49.5%] flex flex-col gap-[40px] justify-center lg:p-[60px] p-[20px]">
+                        <div class="border-b-2 border-light">
+                            <h1 class="heading">Problems we solve</h1>
+                        </div>
+                        <div>
+                            <p class="paragraph">
+                            <ul class="list-disc list-inside">
+                                <li>Lack of Time</li>
+                                <li>Limited Access to Healthy Options</li>
+                                <li>Monotonous Meals</li>
+                                <li>Lack of Inspiration</li>
+                            </ul>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="items"></div>
     </div>
     <!-- About Section End -->
 
+    <!-- Footer Section -->
+    <div class="flex flex-col h-max w-full mb-20">
+        <div class="flex flex-col mx-[5%] h-full gap-[50px]">
+            <div class="flex flex-row">
+                <div class="flex w-1/2 flex-row gap-8">
+                    <img src="./assets/logo.svg" class="w-auto h-[120px]">
+                    <div class="flex items-center">
+                        <h1 class="logo mt-10">Fit.eats</h1>
+                    </div>
+                </div>
+                <div class="flex w-1/2 justify-end items-end">
+                    <div class="flex items-center flex-row gap-5 h-max">
+                        <p class="font-semibold text-[20px]/[150%] text-textcolor">Go to top</p>
+                        <a href="#navbar" id="topbutton">
+                            <button class="animate-bounce">
+                                <div class="flex rounded-full h-16 w-16 bg-[#658936] items-center justify-center"><i
+                                        class="fas fa-arrow-up text-white text-2xl"></i></div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row rounded-lg bg-primary h-[90px]">
+                <div class="flex flex-row w-1/2 ml-[2.5%] gap-[2%]">
+                    <div class="flex items-center">
+                        <div class="flex flex-row items-center h-max gap-3 border py-3 px-5 rounded-md">
+                            <i class="fas fa-envelope text-light text-2xl"></i>
+                            <p class="footertext">fiteats@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex flex-row items-center h-max gap-3 border py-3 px-5 rounded-md">
+                            <i class="fas fa-location-dot text-light text-2xl"></i>
+                            <p class="footertext">Kathmandu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row w-1/2 justify-end mr-[2.5%]">
+                    <div class="flex items-center">
+                        <p class="footertext">&copy; Fit.eats, All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    </div>
+    <!-- Footer Section End -->
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
 
 </body>
 
