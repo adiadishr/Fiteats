@@ -711,20 +711,12 @@ video {
   margin-left: 10%;
 }
 
-.ml-\[2\.5\%\]{
-  margin-left: 2.5%;
-}
-
 .mr-2{
   margin-right: 0.5rem;
 }
 
 .mr-\[10\%\]{
   margin-right: 10%;
-}
-
-.mr-\[2\.5\%\]{
-  margin-right: 2.5%;
 }
 
 .mt-10{
@@ -773,6 +765,10 @@ video {
 
 .h-\[140px\]{
   height: 140px;
+}
+
+.h-\[2000px\]{
+  height: 2000px;
 }
 
 .h-\[40px\]{
@@ -840,6 +836,10 @@ video {
   width: 4rem;
 }
 
+.w-8\/12{
+  width: 66.666667%;
+}
+
 .w-9\/12{
   width: 75%;
 }
@@ -887,22 +887,6 @@ video {
 
 .grow{
   flex-grow: 1;
-}
-
-@keyframes bounce{
-  0%, 100%{
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce{
-  animation: bounce 1s infinite;
 }
 
 .cursor-pointer{
@@ -981,10 +965,6 @@ video {
   gap: 10px;
 }
 
-.gap-\[2\%\]{
-  gap: 2%;
-}
-
 .gap-\[20px\]{
   gap: 20px;
 }
@@ -1019,6 +999,10 @@ video {
 
 .rounded-\[40px\]{
   border-radius: 40px;
+}
+
+.rounded-\[50\%\]{
+  border-radius: 50%;
 }
 
 .rounded-full{
@@ -1083,6 +1067,10 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-r-2{
+  border-right-width: 2px;
+}
+
 .border-\[\#262626\]{
   --tw-border-opacity: 1;
   border-color: rgb(38 38 38 / var(--tw-border-opacity));
@@ -1111,6 +1099,15 @@ video {
 .border-primary{
   --tw-border-opacity: 1;
   border-color: rgb(77 124 15 / var(--tw-border-opacity));
+}
+
+.border-\[\#\]{
+  border-color: #;
+}
+
+.border-\[\#363636\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(54 54 54 / var(--tw-border-opacity));
 }
 
 .border-opacity-20{
@@ -1294,6 +1291,10 @@ video {
 
 .pl-\[10px\]{
   padding-left: 10px;
+}
+
+.pr-\[10px\]{
+  padding-right: 10px;
 }
 
 .pr-\[20px\]{
@@ -1926,6 +1927,22 @@ html {
     display: flex;
   }
 
+  .lg\:h-full{
+    height: 100%;
+  }
+
+  .lg\:h-\[full\]{
+    height: full;
+  }
+
+  .lg\:h-\[466px\]{
+    height: 466px;
+  }
+
+  .lg\:h-\[400px\]{
+    height: 400px;
+  }
+
   .lg\:w-1\/2{
     width: 50%;
   }
@@ -1938,12 +1955,28 @@ html {
     width: 60%;
   }
 
+  .lg\:w-4\/12{
+    width: 33.333333%;
+  }
+
   .lg\:w-7\/12{
     width: 58.333333%;
   }
 
   .lg\:w-\[49\.5\%\]{
     width: 49.5%;
+  }
+
+  .lg\:w-full{
+    width: 100%;
+  }
+
+  .lg\:w-\[458px\]{
+    width: 458px;
+  }
+
+  .lg\:w-\[400px\]{
+    width: 400px;
   }
 
   .lg\:flex-row{

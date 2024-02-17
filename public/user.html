@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-background font-universal">
+
+    <div id="top" class="absolute top-0"></div>
+
+    <!-- Top Start -->
+    <div class="flex h-[90px] sticky top-0 bg-background z-50">
+        <div
+            class="flex flex-row justify-between pb-[10px] w-full md:mx-[3%] mx-[5%] border-b border-[#262626] border-opacity-80">
+            <!-- Left Side -->
+            <div class="flex md:hidden items-center">
+                <i class="fas fa-bars text-4xl pl-[10px]"></i>
+            </div>
+            <a href="index.html" class="flex gap-[10px]">
+                <img src="./assets/logo.svg" alt="" class="h-[80px] w-[80px]">
+                <div class="flex flex-row pb-[10px]">
+                    <h1 class="hidden md:flex font-bold text-[36px]/[120%] h-full text-textcolor items-end">Fit.eats
+                    </h1>
+                </div>
+            </a>
+            <!-- Right Side -->
+            <div class="flex flex-row items-center gap-[20px]">
+                <!-- User Icon -->
+                <img class="hidden sm:flex w-[50px] h-[50px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
+                    src="./assets/6.png"></img>
+                <!-- Triple Dot -->
+                <div class="text-4xl">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top End -->
+
+    <!-- Baby Start -->
+    <div class="flex py-[20px]">
+        <!-- Inside Frame -->
+        <div class="flex w-full md:mx-[3%] mx-[7.5%] h-[2000px] bg-primary">
+            <div class="flex flex-col lg:flex-row w-full">
+                <div class="flex lg:w-4/12 h-max">
+                    <img src="./assets/baby.png" class="rounded-[50%] object-cover border-[#262626] border-b-2 border-r-2">
+                </div>
+                <div class="flex w-8/12">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Recipe End -->
+
+    <!-- Footer Section -->
+    <div class="flex flex-col h-max w-full mt-24 mb-10">
+        <div class="flex flex-col mx-[5%] h-full gap-[50px]">
+            <div class="flex flex-row">
+                <div class="flex w-1/2 flex-row gap-8">
+                    <img src="./assets/logo.svg" class="w-auto h-[120px]">
+                    <div class="items-center hidden sm:flex">
+                        <h1 class="logo mt-10">Fit.eats</h1>
+                    </div>
+                </div>
+                <div class="flex w-1/2 justify-end items-end">
+                    <div class="flex items-center flex-row gap-5 h-max">
+                        <p class="hidden md:block font-semibold text-[20px]/[150%] text-textcolor">Go to top</p>
+                        <a href="#top" id="topbutton">
+                            <div class="flex rounded-full h-16 w-16 bg-[#658936] items-center justify-center"><i
+                                    class="fas fa-arrow-up text-white text-2xl"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row rounded-lg bg-primary py-5 md:py-[1.5%] justify-between px-[2.5%]">
+                <div class="flex  flex-col md:flex-row md:gap-[2%] gap-4">
+                    <div class="flex items-center">
+                        <div class="flex flex-row items-center h-max gap-3 border py-3 px-5 rounded-md">
+                            <i class="fas fa-envelope text-light text-2xl"></i>
+                            <p class="footertext">fiteats@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex flex-row items-center h-max gap-3 border py-3 px-5 rounded-md">
+                            <i class="fas fa-location-dot text-light text-2xl"></i>
+                            <p class="footertext">Kathmandu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row hidden md:flex">
+                    <div class="flex items-center">
+                        <p class="footertext">&copy; Fit.eats, All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center md:hidden mt-[-25px] mb-10">
+                <p class="text-primary text-[18px]/[150%] font-normal">&copy; Fit.eats, All rights reserved</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all dropdown buttons and menus
+            const dropdownBtns = document.querySelectorAll('.admin-menu-btn');
+            const dropdownMenus = document.querySelectorAll('.admin-dropdown-menu');
+
+            // Add event listener for each dropdown button
+            dropdownBtns.forEach(function (dropdownBtn, index) {
+                dropdownBtn.addEventListener('click', function () {
+                    // Toggle the visibility of the corresponding dropdown menu
+                    dropdownMenus[index].classList.toggle('hidden');
+                });
+            });
+
+            // Hide dropdown menus when clicking outside of them
+            document.addEventListener('click', function (event) {
+                dropdownBtns.forEach(function (dropdownBtn, index) {
+                    if (!dropdownMenus[index].contains(event.target) && !dropdownBtn.contains(event.target)) {
+                        dropdownMenus[index].classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
