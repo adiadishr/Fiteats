@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit.eats</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-background font-universal">
+
+    <div id="top" class="absolute top-0"></div>
+
+    <!-- Top Start -->
+    <div class="flex h-[90px] sticky top-0 bg-background z-50">
+        <div
+            class="flex flex-row justify-between pb-[10px] w-full md:mx-[3%] mx-[5%] border-b border-[#262626] border-opacity-80">
+            <!-- Left Side -->
+            <div class="flex md:hidden items-center">
+                <i class="fas fa-bars text-4xl pl-[10px]"></i>
+            </div>
+            <a href="index.html" class="flex gap-[10px]">
+                <img src="./assets/logo.svg" alt="" class="h-[80px] w-[80px]">
+                <div class="flex flex-row pb-[10px]">
+                    <h1 class="hidden md:flex font-bold text-[36px]/[120%] h-full text-textcolor items-end">Fit.eats
+                    </h1>
+                </div>
+            </a>
+            <!-- Right Side -->
+            <div class="flex flex-row items-center gap-[20px]">
+                <!-- User Icon -->
+                <img class="hidden sm:flex w-[50px] h-[50px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
+                    src="./assets/6.png"></img>
+                <!-- Triple Dot -->
+                <div class="text-4xl">
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top End -->
+
+    <!-- Recipe Start -->
+    <div class="flex py-[20px]">
+        <!-- Inside Frame -->
+        <div class="flex w-full h-full md:mx-[3%] mx-[7.5%]">
+            <!-- Left Frame -->
+            <div class="hidden md:flex flex-col min-w-[200px] w-[25%] pr-[20px]">
+                <!-- Items -->
+                <div id="popular" class="category-tab category-active">
+                    <i class="fa-solid fa-circle-arrow-up fa-rotate-by" style="--fa-rotate-angle: 45deg;"></i>
+                    <p class=" category-text">Popular</p>
+                </div>
+                <div class="flex flex-row w-full gap-[10px] px-[20px] py-[20px] items-center">
+                    <p class="text-[24px]/[120%] font-semibold text-heading">Categories:</p>
+                </div>
+                <div id="breakfast" class="category-tab">
+                    <p class="category-text">Breakfast</p>
+                </div>
+                <div id="lunch" class="category-tab">
+                    <p class="category-text">Lunch</p>
+                </div>
+                <div id="dinner" class="category-tab">
+                    <p class="category-text">Dinner</p>
+                </div>
+                <div id="deserts" class="category-tab">
+                    <p class="category-text">Deserts</p>
+                </div>
+            </div>
+            <!-- Right Frame -->
+            <div class="flex flex-col w-full">
+                <!-- Header -->
+                <div class="flex flex-col h-max lg:flex-row w-full lg:gap-0 gap-10 mb-10">
+                    <!-- Image -->
+                    <div class="flex h-max lg:w-2/5 relative">
+                        <img class="rounded-2xl" src="./assets/recipe-1.jpg">
+                        <!-- Admin Menu -->
+                        <button
+                            class="admin-menu-btn absolute top-5 left-5 flex items-center bg-gray-700 text-white px-4 py-1 rounded-xl focus:outline-none focus:bg-gray-600">
+                            <i class="fas fa-ellipsis-h text-xl"></i>
+                        </button>
+                        <div
+                            class="admin-dropdown-menu absolute bg-gray-700 bg-opacity-80 top-12 left-5  rounded-md hidden">
+                            <!-- Dropdown items go here -->
+                            <a href="#" class="block rounded-t-xl px-6 py-2 w-full text-white hover:bg-gray-600">Post
+                                1</a>
+                            <a href="#" class="block rounded-b-xl px-6 py-2 text-white hover:bg-gray-600">Delete
+                                Post</a>
+                        </div>
+                    </div>
+                    <!-- Title -->
+                    <div class="flex flex-col lg:w-3/5 lg:pb-[1.5%] lg:px-[5%] lg:justify-between">
+                        <div class="mb-10 lg:mb-0">
+                            <div class="flex w-full justify-between">
+                                <div
+                                    class="text-textcolor rounded-full bg-slate-400 bg-opacity-20 w-max py-1 px-5 mb-2 md:mb-0">
+                                    Lunch
+                                </div>
+                                <div class="flex items-center">
+                                    <a href="home.html" class="hover:-translate-x-1 transition-all duration-300">
+                                        <i class="fas fa-arrow-left text-xl "></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <h1 class="text-[48px] font-bold text-textcolor mb-3">Seafood Platter</h1>
+                            <a href="">
+                                <div class="flex flex-row gap-2">
+                                    <img class="w-[40px] h-[40px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
+                                        src="./assets/user-3.png"></img>
+                                    <span class="flex items-center recipe-subtitle hover:underline">@spongebob</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex w-full items-center justify-between text-textcolor">
+                            <div class="flex gap-5">
+                                <div class="flex flex-row gap-3 items-center">
+                                    <i class="fas fa-eye"></i>
+                                    <p>4,000 views</p>
+                                </div>
+                                <div class="flex flex-row gap-3 items-center">
+                                    <i class="fas fa-calendar"></i>
+                                    <p>12/12/2024</p>
+                                </div>
+                            </div>
+                            <button
+                                class="bg-slate-400 bg-opacity-20 py-2 px-3 rounded-lg hover:-translate-y-2 transition-all duration-300 bookmark-button relative z-10">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Recipe -->
+                <div class="flex flex-col gap-10 mb-10">
+                    <!-- Description -->
+                    <div class="flex flex-col">
+                        <!-- Heading -->
+                        <h1 class="instruction-heading mb-[2%]">Description:</h1>
+                        <!-- Content -->
+                        <div class="flex flex-col lg:flex-row w-11/12 lg:gap-[5%]">
+                            <!-- Facts -->
+                            <div class="flex gap-8 mb-[5%] lg:mb-0">
+                                <div class="flex flex-col justify-center">
+                                    <p class="font-semibold text-[36px] text-center text-primary">4.0</p>
+                                    <p class="text-[18px] text-center">Rating</p>
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <p class="font-semibold text-[36px] text-center text-primary">245</p>
+                                    <p class="text-[18px] text-center">Calories</p>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <p class="leading-loose">Delightful flavors of the ocean - bursting with a variety of fresh
+                                seafood and vibrant
+                                ingredients, this dish offers a perfect balance of taste and nutrition. Whether you're
+                                looking for a wholesome meal or hosting a gathering, this recipe promises to satisfy
+                                your cravings while keeping you on track with your health goals.</p>
+                        </div>
+                    </div>
+                    <!-- Ingredients -->
+                    <div class="flex flex-col">
+                        <!-- Heading -->
+                        <h1 class="instruction-heading mb-[2%]">Ingredients:</h1>
+                        <!-- Text -->
+                        <ul class="list-disc list-inside w-11/12">
+                            <li class="recipe-list">Fresh shrimp</li>
+                            <li class="recipe-list">Succulent Scallops</li>
+                            <li class="recipe-list">Fragrant garlic cloves</li>
+                            <li class="recipe-list">Zesty Lemon Wedges</li>
+                            <li class="recipe-list">High-quality olive oil</li>
+                        </ul>
+                    </div>
+                    <!-- Instructions -->
+                    <div class="flex flex-col">
+                        <!-- Heading -->
+                        <h1 class="instruction-heading mb-[2%]">Instructions:</h1>
+                        <!-- Text -->
+                        <ul class="list-disc list-inside w-11/12">
+                            <li class="recipe-list">Prep the Seafood: Begin by rinsing the seafood under cold
+                                water and patting
+                                dry</li>
+                            <li class="recipe-list">Sauté the Vegetables: Heat olive oil in a large skillet
+                                over medium heat.
+                                Add minced garlic and sauté until fragrant.</li>
+                            <li class="recipe-list">Cook the Seafood: In the same skillet, add the seasoned
+                                seafood in a single
+                                layer. Cook for a few minutes on each side</li>
+                            <li class="recipe-list">Garnish with Herbs: Sprinkle freshly chopped herbs like
+                                thyme, rosemary,
+                                and parsley</li>
+                            <li class="recipe-list">Serve and Enjoy: Arrange the seafood and vegetables on a
+                                platter</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Review -->
+                <div class="flex flex-col">
+                    <h1 class="instruction-heading mb-[2%]">Reviews:</h1>
+                    <p class="text-[18px]/[120%] font-normal text-textcolor mb-[2%]">Add a review:</p>
+                    <form class="mb-14">
+                        <div class="flex items-center mb-4">
+                            <label for="rating" class="mr-2">Rating:</label>
+                            <div class="flex items-center">
+                                <input type="radio" id="star5" name="rating" value="5" class="hidden" />
+                                <label for="star5" class="cursor-pointer">
+                                    <i class="fas fa-star star"></i>
+                                </label>
+                                <input type="radio" id="star4" name="rating" value="4" class="hidden" />
+                                <label for="star4" class="cursor-pointer">
+                                    <i class="fas fa-star star"></i>
+                                </label>
+                                <input type="radio" id="star3" name="rating" value="3" class="hidden" />
+                                <label for="star3" class="cursor-pointer">
+                                    <i class="fas fa-star star"></i>
+                                </label>
+                                <input type="radio" id="star2" name="rating" value="2" class="hidden" />
+                                <label for="star2" class="cursor-pointer">
+                                    <i class="fas fa-star star"></i>
+                                </label>
+                                <input type="radio" id="star1" name="rating" value="1" class="hidden" />
+                                <label for="star1" class="cursor-pointer">
+                                    <i class="fas fa-star star"></i>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="comment" class="block mb-2">Comment:</label>
+                            <textarea id="comment" name="comment" rows="4"
+                                class="w-full border border-gray-300 rounded-md p-2"></textarea>
+                        </div>
+                        <button type="submit" class="primary-btn">Submit</button>
+                    </form>
+                    <!--Individual Review -->
+                    <div class="flex flex-col mb-5 border border-gray-600 p-5 rounded-lg bg-white">
+                        <!-- UserID -->
+                        <div class="flex flex-row gap-2 mb-4">
+                            <a class="flex flex-row gap-2 cursor-pointer" href="#">
+                                <img class="w-[40px] h-[40px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
+                                    src="./assets/user-3.png"></img>
+                                <span class="flex items-center hover:underline">@spongebob</span>
+                            </a>
+                            <span class="flex items-center font-light tracking-tighter">11/12/2023</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="flex flex-col md:flex-row gap-4 md:gap-8 mb-[5%] lg:mb-0">
+                            <!-- Rating -->
+                            <div class="flex gap-3 md:gap-0 md:flex-col md:justify-center items-center">
+                                <p class="font-semibold text-[36px] md:text-center text-primary">4.0</p>
+                                <p class="text-[18px] md:text-center">Rating</p>
+                            </div>
+                            <!-- Text -->
+                            <p class="leading-loose">Delightful flavors of the ocean - bursting with a variety of fresh
+                                seafood and vibrant
+                                ingredients, this dish offers a perfect balance of taste and nutrition. Whether you're
+                                looking for a wholesome meal or hosting a gathering, this recipe promises to satisfy
+                                your cravings while keeping you on track with your health goals.</p>
+                        </div>
+                    </div>
+                    <!--Individual Review -->
+                    <div class="flex flex-col mb-5 border border-gray-600 p-5 rounded-lg bg-white">
+                        <!-- UserID -->
+                        <div class="flex flex-row gap-2 mb-4">
+                            <a class="flex flex-row gap-2 cursor-pointer" href="#">
+                                <img class="w-[40px] h-[40px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
+                                    src="./assets/user-3.png"></img>
+                                <span class="flex items-center hover:underline">@spongebob</span>
+                            </a>
+                            <span class="flex items-center font-light tracking-tighter">11/12/2023</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="flex flex-col md:flex-row gap-4 md:gap-8 mb-[5%] lg:mb-0">
+                            <!-- Rating -->
+                            <div class="flex gap-3 md:gap-0 md:flex-col md:justify-center items-center">
+                                <p class="font-semibold text-[36px] md:text-center text-primary">4.0</p>
+                                <p class="text-[18px] md:text-center">Rating</p>
+                            </div>
+                            <!-- Text -->
+                            <p class="leading-loose">Delightful flavors of the ocean - bursting with a variety of fresh
+                                seafood and vibrant
+                                ingredients, this dish offers a perfect balance of taste and nutrition. Whether you're
+                                looking for a wholesome meal or hosting a gathering, this recipe promises to satisfy
+                                your cravings while keeping you on track with your health goals.</p>
+                        </div>
+                    </div>
+                    <!--Individual Review -->
+                    <div class="flex flex-col mb-5 border border-gray-600 p-5 rounded-lg bg-white">
+                        <!-- UserID -->
+                        <div class="flex flex-row gap-2 mb-4">
+                            <a class="flex flex-row gap-2 cursor-pointer" href="#">
+                                <img class="w-[40px] h-[40px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
+                                    src="./assets/user-3.png"></img>
+                                <span class="flex items-center hover:underline">@spongebob</span>
+                            </a>
+                            <span class="flex items-center font-light tracking-tighter">11/12/2023</span>
+                        </div>
+                        <!-- Content -->
+                        <div class="flex flex-col md:flex-row gap-4 md:gap-8 mb-[5%] lg:mb-0">
+                            <!-- Rating -->
+                            <div class="flex gap-3 md:gap-0 md:flex-col md:justify-center items-center">
+                                <p class="font-semibold text-[36px] md:text-center text-primary">4.0</p>
+                                <p class="text-[18px] md:text-center">Rating</p>
+                            </div>
+                            <!-- Text -->
+                            <p class="leading-loose">Delightful flavors of the ocean - bursting with a variety of fresh
+                                seafood and vibrant
+                                ingredients, this dish offers a perfect balance of taste and nutrition. Whether you're
+                                looking for a wholesome meal or hosting a gathering, this recipe promises to satisfy
+                                your cravings while keeping you on track with your health goals.</p>
+                        </div>
+                    </div>
+                    <i class="flex w-max ml-5 fas fa-ellipsis-h text-textcolor text-3xl hover:cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recipe End -->
+
+    <!-- Footer Section -->
+    <div class="flex flex-col h-max w-full mt-24 mb-10">
+        <div class="flex flex-col mx-[5%] h-full gap-[50px]">
+            <div class="flex flex-row">
+                <div class="flex w-1/2 flex-row gap-8">
+                    <img src="./assets/logo.svg" class="w-auto h-[120px]">
+                    <div class="items-center hidden sm:flex">
+                        <h1 class="logo mt-10">Fit.eats</h1>
+                    </div>
+                </div>
+                <div class="flex w-1/2 justify-end items-end">
+                    <div class="flex items-center flex-row gap-5 h-max">
+                        <p class="hidden md:block font-semibold text-[20px]/[150%] text-textcolor">Go to top</p>
+                        <a href="#top" id="topbutton">
+                            <div class="flex rounded-full h-16 w-16 bg-[#658936] items-center justify-center"><i
+                                    class="fas fa-arrow-up text-white text-2xl"></i></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row rounded-lg bg-primary py-5 md:py-[1.5%] justify-between px-[2.5%]">
+                <div class="flex  flex-col md:flex-row md:gap-[2%] gap-4">
+                    <div class="flex items-center">
+                        <div class="flex flex-row items-center h-max gap-3 border py-3 px-5 rounded-md">
+                            <i class="fas fa-envelope text-light text-2xl"></i>
+                            <p class="footertext">fiteats@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="flex flex-row items-center h-max gap-3 border py-3 px-5 rounded-md">
+                            <i class="fas fa-location-dot text-light text-2xl"></i>
+                            <p class="footertext">Kathmandu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row hidden md:flex">
+                    <div class="flex items-center">
+                        <p class="footertext">&copy; Fit.eats, All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center md:hidden mt-[-25px] mb-10">
+                <p class="text-primary text-[18px]/[150%] font-normal">&copy; Fit.eats, All rights reserved</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section End -->
+
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all dropdown buttons and menus
+            const dropdownBtns = document.querySelectorAll('.admin-menu-btn');
+            const dropdownMenus = document.querySelectorAll('.admin-dropdown-menu');
+
+            // Add event listener for each dropdown button
+            dropdownBtns.forEach(function (dropdownBtn, index) {
+                dropdownBtn.addEventListener('click', function () {
+                    // Toggle the visibility of the corresponding dropdown menu
+                    dropdownMenus[index].classList.toggle('hidden');
+                });
+            });
+
+            // Hide dropdown menus when clicking outside of them
+            document.addEventListener('click', function (event) {
+                dropdownBtns.forEach(function (dropdownBtn, index) {
+                    if (!dropdownMenus[index].contains(event.target) && !dropdownBtn.contains(event.target)) {
+                        dropdownMenus[index].classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const bookmarkButton = document.querySelector('.bookmark-button');
+
+            bookmarkButton.addEventListener('click', function () {
+                const bookmarkIcon = this.querySelector('i');
+                bookmarkIcon.classList.toggle('far');
+                bookmarkIcon.classList.toggle('fas');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const stars = document.querySelectorAll('.star');
+
+            stars.forEach((star, index) => {
+                star.addEventListener('click', function () {
+                    const rating = index + 1;
+                    stars.forEach((s, i) => {
+                        if (i < rating) {
+                            s.classList.add('checked');
+                        } else {
+                            s.classList.remove('checked');
+                        }
+                    });
+                });
+            });
+        });
+
+    </script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

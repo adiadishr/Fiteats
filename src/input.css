@@ -23,7 +23,7 @@ html {
 }
 
 .footertext {
-    @apply text-white text-[18px]/[150%] font-normal
+    @apply text-white text-[16px]/[150%] lg:text-[18px]/[150%] font-normal
 }
 
 .navlink {
@@ -69,11 +69,11 @@ html {
 }
 
 .card {
-    @apply flex flex-col w-full 1080px:w-[32.5%] md:w-[48.5%] h-max rounded-xl border-r-2 border-b-2 border-black bg-white shadow-card hover:-translate-y-1 duration-300 transition-all cursor-pointer hover:outline-dashed outline-primary outline-[5px]
+    @apply flex flex-col w-full 1080px:w-[32.5%] md:w-[48.5%] h-[400px] rounded-xl border-r-2 border-b-2 border-black bg-white shadow-card hover:-translate-y-1 duration-300 transition-all cursor-pointer hover:outline-dashed outline-primary outline-[5px] relative
 }
 
 .recipe-title {
-    @apply font-semibold text-[18px]/[120%] text-textcolor
+    @apply font-semibold text-[20px]/[120%] text-textcolor
 }
 
 .recipe-subtitle {
@@ -86,6 +86,28 @@ html {
 
 /* Home Page End */
 
+/* Recipe Page Start*/
+
+.instruction-heading {
+    @apply text-textcolor text-[36px] font-semibold
+}
+
+.recipe-list {
+    @apply mb-2 leading-loose
+}
+
+.star {
+    color: #cbd5e0;
+    /* Grey-400 by default */
+}
+
+.star.checked {
+    color: #f6e05e;
+    /* Yellow-400 when checked */
+}
+
+/* Recipe Page End */
+
 /* Buttons Start */
 
 .btn {
@@ -93,7 +115,7 @@ html {
 }
 
 .primary-btn {
-    @apply bg-primary text-white rounded-md px-[20px] py-[12px]
+    @apply bg-primary text-white rounded-md px-[20px] py-[12px] hover:bg-opacity-90
 }
 
 .secondary-btn {
@@ -105,3 +127,71 @@ html {
 }
 
 /* Buttons End */
+
+/* Animations Start */
+
+@keyframes dropAnimation {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.dividers>div {
+    opacity: 0;
+    animation: dropAnimation .5s ease forwards;
+}
+
+.dividers>div:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.dividers>div:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+.dividers>div:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.dividers>div:nth-child(4) {
+    animation-delay: 1.1s;
+}
+
+@keyframes rollIn {
+    0% {
+        transform: translateX(-200%) rotate(-360deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0) rotate(0);
+        opacity: 1;
+    }
+}
+
+.rolling-image {
+    opacity: 0;
+    animation: rollIn 1.5s ease-in-out forwards;
+    animation-delay: .5s;
+}
+
+@keyframes fireworks {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Animations End */

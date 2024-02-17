@@ -12,35 +12,6 @@
 
 <body class="bg-background font-universal">
 
-    <!-- Top Start -->
-    <div id="top" class="flex h-[90px] sticky top-0 bg-background z-50">
-        <div
-            class="flex flex-row justify-between pb-[10px] w-full md:mx-[3%] mx-[5%] border-b border-[#262626] border-opacity-80">
-            <!-- Left Side -->
-            <div class="flex md:hidden items-center">
-                <i class="fas fa-bars text-4xl pl-[10px]"></i>
-            </div>
-            <a href="index.html" class="flex gap-[10px]">
-                <img src="./assets/logo.svg" alt="" class="h-[80px] w-[80px]">
-                <div class="flex flex-row pb-[10px]">
-                    <h1 class="hidden md:flex font-bold text-[36px]/[120%] h-full text-textcolor items-end">Fit.eats
-                    </h1>
-                </div>
-            </a>
-            <!-- Right Side -->
-            <div class="flex flex-row items-center gap-[20px]">
-                <!-- User Icon -->
-                <img class="hidden sm:flex w-[50px] h-[50px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
-                    src="./assets/6.png"></img>
-                <!-- Triple Dot -->
-                <div class="text-4xl">
-                    <i class="fas fa-ellipsis-h"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Top End -->
-
     <!-- Main Start -->
     <div class="flex py-[20px]">
         <!-- Inside Frame -->
@@ -72,15 +43,28 @@
             <div class="flex flex-wrap md:gap-[10px] gap-[20px] w-full h-full">
                 <!-- Item -->
                 <div class="card">
+                    <!-- Admin Menu -->
+                    <button
+                        class="admin-menu-btn absolute top-5 left-5 flex items-center bg-gray-700 text-white px-4 py-1 rounded-xl focus:outline-none focus:bg-gray-600">
+                        <i class="fas fa-ellipsis-h text-xl"></i>
+                    </button>
+                    <div
+                        class="admin-dropdown-menu absolute bg-gray-700 bg-opacity-80 top-12 left-0  rounded-md hidden">
+                        <!-- Dropdown items go here -->
+                        <a href="#" class="block rounded-t-xl px-6 py-2 w-full text-white hover:bg-gray-600">Post 1</a>
+                        <a href="#" class="block rounded-b-xl px-6 py-2 text-white hover:bg-gray-600">Delete Post</a>
+                    </div>
                     <!-- Image -->
-                    <img src="./assets/recipe-1.jpg" class="h-[60%] rounded-t-xl">
+                    <img src="./assets/recipe-1.jpg" class="h-full rounded-t-xl">
                     <!-- Details -->
-                    <div class="flex flex-col w-full h-full">
+                    <div class="flex flex-col w-full h-full px-[15px] py-[10px]">
                         <!-- Upper -->
                         <div
                             class="flex flex-col justify-center w-full h-full p-[10px] border-b border-[#262626] border-opacity-20">
-                            <h5 class="recipe-title h-full">Seafood Platter</h5>
-                            <div class="flex flex-row justify-between h-full">
+                            <a href="product.html">
+                                <h5 class="recipe-title h-full flex items-center">Seafood Platter</h5>
+                            </a>
+                            <div class="flex items-center flex-row justify-between h-full">
                                 <p class="recipe-subtitle">4,000 Views</p>
                                 <p class="recipe-subtitle">245 Calories</p>
                             </div>
@@ -90,8 +74,51 @@
                             <a href="">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[40px] h-[40px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
+                                        src="./assets/user-3.png"></img>
+                                    <span class="flex items-center recipe-subtitle hover:underline">@spongebob</span>
+                                </div>
+                            </a>
+                            <div class="flex flex-col">
+                                <p class="rating text-center text-primary">4.0</p>
+                                <p class="recipe-subtitle text-center">Rating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item -->
+                <div class="card">
+                    <!-- Admin Menu -->
+                    <button
+                        class="admin-menu-btn absolute top-5 left-5 flex items-center bg-gray-700 text-white px-4 py-1 rounded-xl focus:outline-none focus:bg-gray-600">
+                        <i class="fas fa-ellipsis-h text-xl"></i>
+                    </button>
+                    <div
+                        class="admin-dropdown-menu absolute bg-gray-700 bg-opacity-80 top-12 left-0  rounded-md hidden">
+                        <!-- Dropdown items go here -->
+                        <a href="#" class="block rounded-t-xl px-6 py-2 w-full text-white hover:bg-gray-600">
+                            Post 2</a>
+                        <a href="#" class="block rounded-b-xl px-6 py-2 text-white hover:bg-gray-600">Delete Post</a>
+                    </div>
+                    <!-- Image -->
+                    <img src="./assets/recipe-5.png" class="h-[60%] rounded-t-xl">
+                    <!-- Details -->
+                    <div class="flex flex-col w-full h-full px-[15px] py-[10px]">
+                        <!-- Upper -->
+                        <div
+                            class="flex flex-col justify-center w-full h-full p-[10px] border-b border-[#262626] border-opacity-20">
+                            <h5 class="recipe-title h-full flex items-center">Vegan Burger</h5>
+                            <div class="flex items-center flex-row justify-between h-full">
+                                <p class="recipe-subtitle">14,000 Views</p>
+                                <p class="recipe-subtitle">450 Calories</p>
+                            </div>
+                        </div>
+                        <!-- Lower -->
+                        <div class="flex flex-row w-full h-full items-center justify-between p-[10px]">
+                            <a href="">
+                                <div class="flex flex-row gap-2">
+                                    <img class="w-[40px] h-[40px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
                                         src="./assets/6.png"></img>
-                                    <span class="flex items-center recipe-subtitle hover:underline">@adishr_</span>
+                                    <span class="flex items-center recipe-subtitle hover:underline">@nightingale</span>
                                 </div>
                             </a>
                             <div class="flex flex-col">
@@ -103,17 +130,28 @@
                 </div>
                 <!-- Item -->
                 <div class="card">
+                    <!-- Admin Menu -->
+                    <button
+                        class="admin-menu-btn absolute top-5 left-5 flex items-center bg-gray-700 text-white px-4 py-1 rounded-xl focus:outline-none focus:bg-gray-600">
+                        <i class="fas fa-ellipsis-h text-xl"></i>
+                    </button>
+                    <div
+                        class="admin-dropdown-menu absolute bg-gray-700 bg-opacity-80 top-12 left-0  rounded-md hidden">
+                        <!-- Dropdown items go here -->
+                        <a href="#" class="block rounded-t-xl px-6 py-2 w-full text-white hover:bg-gray-600">Post 3</a>
+                        <a href="#" class="block rounded-b-xl px-6 py-2 text-white hover:bg-gray-600">Delete Post</a>
+                    </div>
                     <!-- Image -->
-                    <img src="./assets/recipe-1.jpg" class="h-[60%] rounded-t-xl">
+                    <img src="./assets/recipe-8.png" class="h-[60%] rounded-t-xl">
                     <!-- Details -->
-                    <div class="flex flex-col w-full h-full">
+                    <div class="flex flex-col w-full h-full px-[15px] py-[10px]">
                         <!-- Upper -->
                         <div
                             class="flex flex-col justify-center w-full h-full p-[10px] border-b border-[#262626] border-opacity-20">
-                            <h5 class="recipe-title h-full">Seafood Platter</h5>
-                            <div class="flex flex-row justify-between h-full">
-                                <p class="recipe-subtitle">4,000 Views</p>
-                                <p class="recipe-subtitle">245 Calories</p>
+                            <h5 class="recipe-title h-full flex items-center">Avocado Toast</h5>
+                            <div class="flex items-center flex-row justify-between h-full">
+                                <p class="recipe-subtitle">26,450 Views</p>
+                                <p class="recipe-subtitle">345 Calories</p>
                             </div>
                         </div>
                         <!-- Lower -->
@@ -121,12 +159,12 @@
                             <a href="">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[40px] h-[40px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
-                                        src="./assets/6.png"></img>
-                                    <span class="flex items-center recipe-subtitle hover:underline">@adishr_</span>
+                                        src="./assets/user-2.png"></img>
+                                    <span class="flex items-center recipe-subtitle hover:underline">@crunchy_mom</span>
                                 </div>
                             </a>
                             <div class="flex flex-col">
-                                <p class="rating text-center text-primary">4.5</p>
+                                <p class="rating text-center text-primary">4.9</p>
                                 <p class="recipe-subtitle text-center">Rating</p>
                             </div>
                         </div>
@@ -134,48 +172,29 @@
                 </div>
                 <!-- Item -->
                 <div class="card">
-                    <!-- Image -->
-                    <img src="./assets/recipe-1.jpg" class="h-[60%] rounded-t-xl">
-                    <!-- Details -->
-                    <div class="flex flex-col w-full h-full">
-                        <!-- Upper -->
-                        <div
-                            class="flex flex-col justify-center w-full h-full p-[10px] border-b border-[#262626] border-opacity-20">
-                            <h5 class="recipe-title h-full">Seafood Platter</h5>
-                            <div class="flex flex-row justify-between h-full">
-                                <p class="recipe-subtitle">4,000 Views</p>
-                                <p class="recipe-subtitle">245 Calories</p>
-                            </div>
-                        </div>
-                        <!-- Lower -->
-                        <div class="flex flex-row w-full h-full items-center justify-between p-[10px]">
-                            <a href="">
-                                <div class="flex flex-row gap-2">
-                                    <img class="w-[40px] h-[40px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
-                                        src="./assets/6.png"></img>
-                                    <span class="flex items-center recipe-subtitle hover:underline">@adishr_</span>
-                                </div>
-                            </a>
-                            <div class="flex flex-col">
-                                <p class="rating text-center text-primary">4.5</p>
-                                <p class="recipe-subtitle text-center">Rating</p>
-                            </div>
-                        </div>
+                    <!-- Admin Menu -->
+                    <button
+                        class="admin-menu-btn absolute top-5 left-5 flex items-center bg-gray-700 text-white px-4 py-1 rounded-xl focus:outline-none focus:bg-gray-600">
+                        <i class="fas fa-ellipsis-h text-xl"></i>
+                    </button>
+                    <div
+                        class="admin-dropdown-menu absolute bg-gray-700 bg-opacity-80 top-12 left-0  rounded-md hidden">
+                        <!-- Dropdown items go here -->
+                        <a href="#" class="block rounded-t-xl px-6 py-2 w-full text-white hover:bg-gray-600">
+                            Post 4</a>
+                        <a href="#" class="block rounded-b-xl px-6 py-2 text-white hover:bg-gray-600">Delete Post</a>
                     </div>
-                </div>
-                <!-- Item -->
-                <div class="card">
                     <!-- Image -->
-                    <img src="./assets/recipe-1.jpg" class="h-[60%] rounded-t-xl">
+                    <img src="./assets/recipe-4.png" class="h-[60%] rounded-t-xl">
                     <!-- Details -->
-                    <div class="flex flex-col w-full h-full">
+                    <div class="flex flex-col w-full h-full px-[15px] py-[10px]">
                         <!-- Upper -->
                         <div
                             class="flex flex-col justify-center w-full h-full p-[10px] border-b border-[#262626] border-opacity-20">
-                            <h5 class="recipe-title h-full">Seafood Platter</h5>
-                            <div class="flex flex-row justify-between h-full">
-                                <p class="recipe-subtitle">4,000 Views</p>
-                                <p class="recipe-subtitle">245 Calories</p>
+                            <h5 class="recipe-title h-full flex items-center">Trail Mix</h5>
+                            <div class="flex items-center flex-row justify-between h-full">
+                                <p class="recipe-subtitle">2,000 Views</p>
+                                <p class="recipe-subtitle">190 Calories</p>
                             </div>
                         </div>
                         <!-- Lower -->
@@ -183,24 +202,48 @@
                             <a href="">
                                 <div class="flex flex-row gap-2">
                                     <img class="w-[40px] h-[40px] rounded-full object-cover shadow-md bg-black bg-opacity-25"
-                                        src="./assets/6.png"></img>
-                                    <span class="flex items-center recipe-subtitle hover:underline">@adishr_</span>
+                                        src="./assets/user-1.png"></img>
+                                    <span class="flex items-center recipe-subtitle hover:underline">@nuttynut</span>
                                 </div>
                             </a>
                             <div class="flex flex-col">
-                                <p class="rating text-center text-primary">4.5</p>
+                                <p class="rating text-center text-primary">3.9</p>
                                 <p class="recipe-subtitle text-center">Rating</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-    <!-- Main End -->
 
-    <!-- Scripts -->
+    <!-- Add your JavaScript code here -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Select all dropdown buttons and menus
+            const dropdownBtns = document.querySelectorAll('.admin-menu-btn');
+            const dropdownMenus = document.querySelectorAll('.admin-dropdown-menu');
+
+            // Add event listener for each dropdown button
+            dropdownBtns.forEach(function (dropdownBtn, index) {
+                dropdownBtn.addEventListener('click', function () {
+                    // Toggle the visibility of the corresponding dropdown menu
+                    dropdownMenus[index].classList.toggle('hidden');
+                });
+            });
+
+            // Hide dropdown menus when clicking outside of them
+            document.addEventListener('click', function (event) {
+                dropdownBtns.forEach(function (dropdownBtn, index) {
+                    if (!dropdownMenus[index].contains(event.target) && !dropdownBtn.contains(event.target)) {
+                        dropdownMenus[index].classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+
+
     <script src="./js/main.js"></script>
 
 </body>
